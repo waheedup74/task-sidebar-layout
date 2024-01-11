@@ -81,8 +81,8 @@ function getScreenWidth() {
           </div>
         </div>
         <div
-          class="w-[calc(100%-0rem)] md:w-[calc(100%-16rem)] h-full p-4 md:px-10 overflow-auto"
-          :class="{ 'w-[calc(100%-0rem)] md:w-[100%]': !isShowSidebar }"
+          class="h-full p-4 md:px-10 overflow-auto"
+          :class="[ !isShowSidebar ? 'w-[calc(100%-0rem)] md:w-[100%]' : 'w-[calc(100%-0rem)] md:w-[calc(100%-16rem)]']"
         >
           <div class="rounded-lg py-4 mb-4">
             <div class="grid grid-cols-12 gap-4" v-if="btcPrice">
